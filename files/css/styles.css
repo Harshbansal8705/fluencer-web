@@ -1,0 +1,743 @@
+@keyframes hover-tour {
+    from {
+        box-shadow: none;
+        background: #F2F2F2;
+        border-left: 4px solid #F2F2F2;
+    }
+
+    to {
+        box-shadow: 3px 3px 15px 0 rgb(186 186 186 / 15%);
+        background: #f8f8f8;
+        border-left: 4px solid #e5e5e5;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', 'sans-serif';
+}
+
+body {
+    overflow-x: hidden;
+}
+
+main div.intro {
+    text-align: left;
+}
+
+main div.logo {
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem;
+}
+
+main div.intro div.logo img {
+    position: absolute;
+    width: 20rem;
+}
+
+main div.intro div.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main div.intro div.text h1 {
+    font-size: 5rem;
+}
+
+main div.intro div.logo span.intro-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main div.intro div.logo {
+    /* text-align: center; */
+    letter-spacing: 3px;
+    font-size: 2rem;
+}
+
+main div.intro div.logo span.intro-inner h3.negotiate {
+    transform: rotate(-90deg);
+}
+
+main div.intro div.logo span.intro-inner h3.design {
+    transform: rotate(90deg);
+}
+
+main button {
+    border: none;
+    background-color: #2e7ef9;
+    color: white;
+    cursor: pointer;
+}
+
+main div.tour div.right {
+    text-align: left;
+    margin: auto;
+    padding: auto;
+    color: #626262;
+}
+
+main div.tour div.connect h3 {
+    color: #3C7FD4;
+}
+
+main div.tour div.negotiate h3 {
+    color: #743ee4;
+}
+
+main div.tour div.design h3 {
+    color: #d34151;
+}
+
+main div.tour div.manage h3 {
+    color: #d73db5;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+}
+
+header {
+    width: 100vw;
+    text-align: center;
+}
+
+header * {
+    font-size: 1.05rem;
+}
+
+header,
+h1 {
+    font-weight: 600;
+}
+
+header nav div.left img {
+    width: 10rem;
+}
+
+header nav div.right a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin: auto 2vw;
+}
+
+header div button.login-button {
+    padding: 1vw;
+    color: white;
+    background-color: #1a73e8;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+header div.right button.login-button:hover {
+    box-shadow: 0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);
+}
+
+header div img.profile-pic {
+    border-radius: 50%;
+    width: 40px;
+    margin-left: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+header nav div.right div.logout-container {
+    display: none;
+}
+
+header nav div.right div.logout-container button.logout {
+    /* display: none; */
+    position: absolute;
+    background-color: blue;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 0px 15px;
+    line-height: 250%;
+    transform: translateX(-55px) translateY(55px);
+}
+
+header nav div.right div.logout-container button.logout:hover {
+    background-color: red;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1vw;
+}
+
+header nav div.right {
+    margin: auto 1vw;
+    padding: auto 1vw;
+}
+
+header nav div.right {
+    display: flex;
+}
+
+main {
+    font-size: 1.25rem;
+    color: #757575;
+    padding: 1vw;
+}
+
+main form * {
+    margin: 0.5vw;
+    padding: 2.5%;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+main input {
+    margin-left: 0;
+    width: 60%;
+    border: solid grey 0.5px;
+}
+
+main div.intro form button {
+    border: none;
+    background-color: #2e7ef9;
+    color: white;
+    cursor: pointer;
+}
+
+div.intro {
+    display: flex;
+    justify-content: space-around;
+    padding: 2vw;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+div.intro div.text>* {
+    margin: 1rem auto;
+}
+
+main h4 {
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #333333;
+}
+
+main h1 {
+    color: #363333;
+    font-size: 3rem;
+}
+
+main h2 {
+    color: black;
+}
+
+main div.tour {
+    padding: 5rem;
+    background-color: #F2F2F2;
+    text-align: center;
+}
+
+main div.tour>div {
+    display: flex;
+    align-items: center;
+}
+
+main div.tour div.right {
+    text-align: left;
+    margin: auto;
+    padding: auto;
+    color: #626262;
+}
+
+main div.tour div.right>div {
+    cursor: pointer;
+    padding: 1rem;
+    border-left: 4px solid #F2F2F2;
+}
+
+main div.tour div.right p {
+    margin: 5px 0;
+}
+
+main div.tour div.right div:hover {
+    animation: hover-tour 0.1s linear;
+    background: #f8f8f8;
+    box-shadow: 3px 3px 15px 0 rgb(186 186 186 / 15%);
+    border-left: 4px solid #e5e5e5;
+}
+
+main div.discover-feature {
+    display: flex;
+    padding: 5rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main div.discover-feature div.left h4 {
+    margin: 1.2rem 0;
+}
+
+main div.discover-feature img {
+    width: 40rem;
+}
+
+main div.discover-feature div.left a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #2e7ef9;
+    font-weight: 500;
+}
+
+main div.top-influencers {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main div.top-influencers div.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main div.top-influencers div.img-cont {
+    width: 100%;
+    height: 80%;
+}
+
+main div.top-influencers div.list h5,
+main div.top-influencers div.list p {
+    margin: 0 1.5rem;
+    margin-top: 0.7rem;
+}
+
+main div.top-influencers div.list p {
+    color: black;
+}
+
+main div.top-influencers div.list div.influencer {
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 50px 30px whitesmoke;
+    text-align: left;
+    width: 20rem;
+    height: 30rem;
+    background-color: white;
+    font-size: 1.3rem;
+    /* flex-grow: 2 */
+}
+
+main div.top-influencers div.list div.influencer img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+main div.trusted-by {
+    padding: 6rem;
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+main div.trusted-by h2 {
+    margin-bottom: 4rem;
+}
+
+main div.trusted-by div.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+main div.trusted-by div.list img {
+    margin: 2rem;
+
+}
+
+main div.trusted-by img.brand {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 15px;
+}
+
+main div.market-your-brand {
+    text-align: center;
+    padding: 5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main div.market-your-brand>* {
+    margin: 30px;
+}
+
+main div.market-your-brand form>* {
+    padding: 1rem;
+}
+
+main div.market-your-brand form input {
+    width: 40%;
+}
+
+main div.team {
+    text-align: center;
+    margin: 4rem 0;
+}
+
+main div.team div.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+main div.team-members div.member {
+    margin: 2rem;
+}
+
+main div.team-members div.member h4.name {
+    line-height: 1rem;
+}
+
+main div.team-members div.member img {
+    border-radius: 50%;
+}
+
+main div.team>* {
+    margin: 2rem 0;
+}
+
+p.icon {
+    color: black;
+    margin: 10px;
+}
+
+main div.search {
+    display: flex;
+    margin: 1rem;
+    padding: 1rem;
+    width: 96%;
+    box-shadow: 0 0 10px 5px rgb(196 196 196 / 50%);
+    border-radius: 5px;
+    align-items: center;
+}
+
+main div.search div.input {
+    border: none;
+}
+
+main div.search div.input input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: rgb(235, 235, 235);
+}
+
+main div.search div.input input:focus {
+    outline: none;
+    border: 1px solid black;
+}
+
+main div.search > div {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.5rem;
+    height: min-content;
+    white-space: nowrap;
+}
+
+main div.search>* {
+    border-left: 1px solid grey;
+    margin-left: 5px;
+}
+
+main div.search div div.options {
+    display: flex;
+    flex-direction: row;
+}
+
+main div.search div input {
+    margin-left: 0.6rem;
+    margin-right: 0.2rem;
+}
+
+main div.search div.options label {
+    margin-right: 10px;
+}
+
+main div.search div.button button {
+    margin: 0 1rem;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+main div.search h4 {
+    font-weight: bold;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1em;
+    height: 1em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.5em;
+    height: 0.5em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    background-color: black;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+div.options > * {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div.options {
+    margin-top: 0.5rem;
+}
+
+span.circle {
+    text-align: center;
+    position: absolute;
+    height: 14.5rem;
+    margin: auto;
+    align-self: center;
+    transform-origin: 0 100%;
+    width: 2rem;
+    translate: -0.1rem -14.3rem;
+    font-weight: bold;
+}
+
+span.connect:hover, span.manage:hover, span.negotiate:hover, span.design:hover {
+    transition: transform 0.1s, color 0.1s;
+    transform: scale(1.1);
+}
+
+span.connect:hover {
+    color: blue;
+}
+
+span.negotiate:hover {
+    color: orange;
+}
+
+span.manage:hover {
+    color: red;
+}
+
+span.design:hover {
+    color: green;
+}
+
+span.blank {
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+    header * {
+        font-size: 1rem;
+    }
+
+    main h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    header nav div.left img {
+        width: 20vw;
+    }
+
+    div.intro {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    div.intro img {
+        width: 30rem;
+    }
+
+    main h4 {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    main div.intro input,
+    main div.intro button {
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    main div.intro input {
+        width: 60%;
+        min-width: 200px;
+    }
+
+    main div.intro button {
+        width: 36%;
+        min-width: 200px;
+    }
+
+    main div.intro form {
+        width: 100%;
+        padding-right: 0;
+        display: inline-block;
+        display: flex;
+        /* flex-wrap: wrap; */
+    }
+
+    main div.intro form * {
+        padding: 1rem;
+    }
+
+    main div.tour img {
+        width: 30rem;
+    }
+
+    main div.discover-feature {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    main div.discover-feature div.left {
+        text-align: center;
+    }
+
+    main div.discover-feature div.left h2 {
+        text-align: center;
+    }
+
+    main div.discover-feature div.left h4 {
+        line-height: 2;
+    }
+
+    main div.top-influencers div.list h5 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main div.tour>div {
+        flex-direction: column;
+    }
+
+    main div.tour img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    main div.tour div * {
+        text-align: center;
+    }
+
+    main div.tour {
+        padding: 2rem;
+    }
+
+    main div.discover-feature img {
+        width: 34rem;
+    }
+
+    main div.market-your-brand {
+        padding: 2rem;
+    }
+
+    main div.market-your-brand form {
+        flex-direction: column;
+    }
+
+    main div.market-your-brand form input {
+        width: 90%;
+    }
+
+    main div.market-your-brand form button {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 542px) {
+    main div.intro form {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main div.intro form {
+        flex-wrap: wrap;
+    }
+
+    main div.intro form * {
+        width: 80%;
+    }
+
+    main div.intro img {
+        width: 90%;
+    }
+
+    header nav div.right {
+        display: none;
+    }
+
+    main div.tour img {
+        width: 100%;
+    }
+
+    main div.tour div div.connect p {
+        font-size: 1.1rem;
+    }
+
+    main div.discover-feature {
+        padding: 1rem;
+    }
+
+    main div.discover-feature img {
+        margin-top: 2rem;
+        width: 90vw;
+    }
+
+    main div.discover-feature div.left a {
+        font-size: 1.25rem;
+    }
+
+    main div.market-your-brand {
+        padding: 1rem;
+    }
+}
